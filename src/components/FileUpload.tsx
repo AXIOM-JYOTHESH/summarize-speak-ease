@@ -1,6 +1,6 @@
 
 import React, { useCallback, useState } from "react";
-import { FilePdf, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface FileUploadProps {
@@ -79,11 +79,7 @@ export function FileUpload({ onFileSelect }: FileUploadProps) {
           <div className="flex flex-col items-center justify-center gap-2">
             {fileName ? (
               <>
-                {fileName.endsWith(".pdf") ? (
-                  <FilePdf className="h-8 w-8 text-primary" />
-                ) : (
-                  <FileText className="h-8 w-8 text-primary" />
-                )}
+                <FileText className="h-8 w-8 text-primary" />
                 <p className="font-medium">{fileName}</p>
                 <p className="text-sm text-muted-foreground">
                   Click or drag to change file
