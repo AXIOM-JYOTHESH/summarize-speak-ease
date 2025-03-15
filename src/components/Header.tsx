@@ -6,8 +6,6 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { 
   Settings, 
   LogOut, 
-  Download, 
-  Star, 
   Edit, 
   User,
   LayoutDashboard
@@ -103,7 +101,7 @@ export function Header() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                   <LayoutDashboard className="mr-2 h-4 w-4" />
-                  <span>Explore GPTs</span>
+                  <span>Explore Models</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Edit className="mr-2 h-4 w-4" />
@@ -114,16 +112,8 @@ export function Header() {
                   <span>Settings</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Download className="mr-2 h-4 w-4" />
-                  <span>Download the Windows app</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Star className="mr-2 h-4 w-4" />
-                  <span>Upgrade Plan</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
                   <User className="mr-2 h-4 w-4" />
-                  <span>Get ChatGPT search extension</span>
+                  <span>My Profile</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={handleLogout}>
